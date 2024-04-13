@@ -1,11 +1,46 @@
-
-
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword,signOut, getAuth, onAuthStateChanged } from "firebase/auth";
+import { app } from '../firebaseConfig';
+// import { useEffect, useState } from "react";
+import { getDatabase, ref, set } from "firebase/database";
 import React, { useState } from 'react';
+
+
+const auth = getAuth(app);    
+const db = getDatabase(app);
+
+    
+
+    
 
 function RegistrationForm() {
 
+    const [yourName,setYourName]=useState("");
+    const [yourEmail,setYourEmail]=useState("");
+    const [yourPassword,setYourPassword]=useState("");
 
+    const getDataOfName = (event) => {
+      setYourName(event.target.value);
+  }
 
+    const getDataOfEmail = (event) => {
+        setYourEmail(event.target.value);
+    }
+    const getDataOfPassword = (event) => {
+      setYourPassword(event.target.value);
+  }
+
+    const submitFormDataSignup = () => {
+      createUserWithEmailAndPassword(auth, yourEmail, yourPassword).then(() =>
+       console.log(yourEmail +" SIGNUP successfully")).then(()=>
+       console.log(auth.currentUser.uid,"from signup function")).then(()=>{
+       var userid=auth.currentUser.uid;
+       set(ref(db,`user/${userid}`),{
+        name : yourName,
+        yourId : userid 
+       }).then(()=> {
+       console.log(userid,"user statics created");});
+      })
+    }
   
 
   return (
@@ -27,14 +62,14 @@ function RegistrationForm() {
           </div>
           <div className="inputs">
             <div className='flex flex-col m-8'>
-              <input required className='border-b border-zinc-300 text-sm py-2' type="text" name="" id="requiredName" placeholder='Name*'/>
+              <input required className='border-b border-zinc-300 text-sm py-2' type="text" name="" id="requiredName" placeholder='Name*' onChange={getDataOfName}/>
               <label className='flex justify-start text-xs text-zinc-400' htmlFor="requiredName">Name which is mentioned in your Aadhar Card</label>
             </div>
             <div className='flex flex-col m-8'>
-              <input className='border-b border-zinc-300 text-sm py-2' type="text" name="" id="requiredName" placeholder='Email Address*'/>
+              <input className='border-b border-zinc-300 text-sm py-2' type="text" name="" id="requiredName" placeholder='Email Address*' onChange={getDataOfEmail}/>
             </div>
             <div className='flex flex-col m-8'>
-              <input className='border-b border-zinc-300 text-sm py-2' type="text" name="" id="requiredName" placeholder='Create a Password*'/>
+              <input className='border-b border-zinc-300 text-sm py-2' type="password" name="" id="requiredName" placeholder='Create a Password*' onChange={getDataOfPassword}/>
             </div>
             <div className='flex flex-col m-8'>
               <div className='border-b text-sm flex justify-evenly'>
@@ -49,7 +84,7 @@ function RegistrationForm() {
             <div className='m-6 text-sm text-center'>
               Already have an account?<span className='text-blue-400'> Login</span>
             </div>
-            <div className="rounded-b-lg bg-cyan-300 text-white font-bold py-2 text-center">
+            <div className="rounded-b-lg bg-cyan-300 text-white font-bold py-2 text-center" onClick={submitFormDataSignup}>
               Next step
             </div>
           </div>
