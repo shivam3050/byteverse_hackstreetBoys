@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import logo from './assets/logo photo-bg.jpg'
 import viteLogo from '/vite.svg'
 import './App.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSearch } from '@fortawesome/free-solid-svg-icons';
 // import {FaBeer} from 'react-icon/fa'
 function App() {
   const [count, setCount] = useState(0)
@@ -24,8 +26,10 @@ function App() {
              <div className="container-sub-4-of-sub-1">
               <p>How It Works</p>
              </div>
+             <div className="container-sub-4-of-sub-1">
+              <p>|</p>
+             </div>
              <div className="search-icon">
-             {/* <p className='search'><FontAwesomeIcon icon="fas fa-search" /></p> */}
               <p>Search</p>
              </div>
           </div>
