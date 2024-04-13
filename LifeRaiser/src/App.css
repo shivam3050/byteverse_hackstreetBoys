@@ -7,7 +7,7 @@ body{
 }
 .container-1{
     width: 100vw;
-    padding: 1rem;
+    padding: 0.7rem;
     display: flex;
     flex-direction: row;
     border: 1px solid green;
@@ -66,5 +66,46 @@ body{
 }
 .my-logo{
     height: 3rem;
-    width: 4.5rem;
+    width: 7rem;
+}
+.container-2{
+    /* position: relative; */
+}
+.need-funds-heading-main{
+    width: 50%;
+    position: absolute;
+    top: 10rem;
+    z-index: 999;
+    left: 50%;
+    border: 2px solid red;
+    line-height: 3rem;
+    
+}
+.plateform-donor-fundraiser{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid blue;
+    padding: 0.5rem;
+}
+.need-funds-heading{
+    width: 90%;
+    font-weight: 600;
+    border: 2px solid pink;
+}
+.need-funds-heading h1{
+    font-size: 2.5rem;
+}
+.life-raiserfee{
+    line-height: 2.5rem;
+}
+.plateform-0{
+    
+}
+.donor-72{
+   
+}
+.fundraisers-3-2{
+
 }
