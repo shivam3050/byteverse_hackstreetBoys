@@ -30,6 +30,7 @@ function Home() {
              <div className="need-funds-heading">
                 <h1>Need Funds to Pay For a Medical Emergency or Social Cause?</h1>
              </div>
+             <br />
              <div className="plateform-donor-fundraiser">
                 <div className="plateform-0">
                     <div className="percentage">
@@ -56,15 +57,23 @@ function Home() {
                     </div>
                 </div>
              </div>
+             <br />
              <div className="life-raiserfee">
               <p>Life Raiser's 0% Plateform Fees ensures maximum for you</p>
-              <Link className='bg-green-600 rounded-md text-white p-2 m-2' to= "signup" element ={<RegistrationForm />} >Lets Start the Fundraising</Link>
+              <Link className='bg-green-600 rounded-md text-white p-3 mt-2 font-bold' to= "signup" element ={<RegistrationForm />} >Lets Start the Fundraising</Link>
+              <p>नि: शुल्क फंडरेजर शुरु करे </p>
              </div>
              </div>
          </div>
       
       </div>
-      </div>
+
+
+      {/* Container-3 Card */}
+        <div className="container-3">
+             
+        </div>
+    </div>
     </>
   )
 }

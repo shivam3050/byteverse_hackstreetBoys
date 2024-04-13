@@ -74,11 +74,10 @@ body{
 .need-funds-heading-main{
     width: 50%;
     position: absolute;
-    top: 10rem;
+    top: 6rem;
     z-index: 999;
     left: 50%;
-    border: 2px solid red;
-    line-height: 3rem;
+    /* border: 2px solid red; */
     
 }
 .plateform-donor-fundraiser{
@@ -86,26 +85,22 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 0.5rem;
+}
+.percentage p{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: cadetblue;
 }
 .need-funds-heading{
     width: 90%;
     font-weight: 600;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 .need-funds-heading h1{
     font-size: 2.5rem;
 }
 .life-raiserfee{
     line-height: 2.5rem;
-}
-.plateform-0{
-    
-}
-.donor-72{
-   
-}
-.fundraisers-3-2{
-
 }
