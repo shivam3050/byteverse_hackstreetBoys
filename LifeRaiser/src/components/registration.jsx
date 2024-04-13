@@ -9,7 +9,7 @@ function RegistrationForm() {
   
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-24">
     <div className=''>
       <div className='flex justify-start mb-1'>
         <select className='border-2 rounded-lg p-2'>
