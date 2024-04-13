@@ -22,11 +22,45 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+.container-sub-1-of-sub-1{
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+#choose{
+  width: 7.5rem;
 }
 .container-sub-2{
     width: 50%;
-    border: 1px solid palegreen;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid palegreen; */
+}
+
+.whatsapp-fundraiser-sign{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid rgb(16, 10, 93); */
+}
+.sub-2-whatsapp-icon{
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 2px solid rgb(9, 189, 54);
+}
+.sub-2-fundraiser{
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    color: cadetblue;
+    border-radius: 5px;
+    font-weight:700;
+    border: 2px solid rgb(9, 189, 54);
 }
 .container-sub-1-of-sub-1{
     display: flex;
@@ -36,10 +70,4 @@ body{
 .my-logo{
     height: 3rem;
     width: 4.5rem;
-}
-.search-icon{
-    color: brown;
-}
-.search{
-    color: brown;
 }
