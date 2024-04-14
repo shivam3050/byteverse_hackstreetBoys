@@ -125,6 +125,7 @@ function Home() {
         </div>
 
 
+
       {/* Container-4 */}
       <div className="container-4">
           <div className="three-simple-steps">
@@ -214,6 +215,7 @@ function Home() {
           </div>
         
       </div>
+
     </div>
     </>
   )
