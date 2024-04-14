@@ -3,6 +3,7 @@ import { app } from '../firebaseConfig';
 // import { useEffect, useState } from "react";
 import { getDatabase, ref, set } from "firebase/database";
 import React, { useState } from 'react';
+// import UserDetails from "./userStatus";
 
 
 const auth = getAuth(app);    
@@ -44,6 +45,7 @@ function RegistrationForm() {
   
 
   return (
+    <>
     <div className="flex justify-center mt-24">
     <div className=''>
       <div className='flex justify-start mb-1'>
@@ -93,6 +95,8 @@ function RegistrationForm() {
 
     </div>
     </div>
+    {/* <UserDetails name={"Patient 1"} email={"example@gmail.com"} funding={"$100"} /> */}
+    </>
   );
 }
 

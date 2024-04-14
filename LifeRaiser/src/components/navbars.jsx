@@ -1,6 +1,8 @@
 import React from "react";
 import logo from '../assets/logo photo-bg.jpg'
 import whatsappicon from '../assets/whatsapp-icon.png'
+import { Link } from 'react-router-dom'
+import SignIn from "./signin";
 
 function Navbar() {
     return(
@@ -40,7 +42,9 @@ function Navbar() {
                     <p>Start a Fundraiser</p>
                 </div>
                 <div className="sub-2-sign">
-                   <p>Sign In</p>
+                
+                <Link className='bg-green-600 rounded-md text-white p-3 mt-2 font-bold' to= "signin" element ={<SignIn />} >Lets Start Signing in</Link>
+
                 </div>
               </div>
           </div>
