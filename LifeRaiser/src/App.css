@@ -154,6 +154,9 @@ body{
     margin-left: -7rem;
     /* border: 1px solid black; */
 }
+.container-3{
+    border: 1px solid red;
+}
 .trending-fundraiser{
     position: relative;
     top: 12rem;
@@ -166,3 +169,81 @@ body{
 .trending-fundraiser p{
     font-size: 1.3rem;
 }
+.container-4{
+    padding: 2.5rem;
+    /* border: 1px solid green; */
+}
+.three-simple-steps{
+    /* border: 1px solid red; */
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.three-step-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    /* border: 1px solid red; */
+}
+.three-step{
+    width: 35%;
+    /* border: 1px solid green; */
+}
+.start-icon-text{
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.start{
+    font-size: 1.7rem;
+    color: cadetblue;
+}
+.start-text{
+    width: 79%;
+}
+.share-text,.withdraw-text{
+    width:75%;
+}
+.fund--talk{
+    /* border: 2px solid blue; */
+    padding: 2rem;
+}
+.start-fund-button{
+    /* bg-cyan-300 p-2 */
+    background-color: skyblue;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.talk-button{
+    /* text-blue-300 p-2 border-2 pl-16 pr-16 */
+    color:cadetblue;
+    padding: 0.7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.613);
+    box-shadow: 2px 2px 5px;
+}
+.start-fund-and-talk-button{
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media (max-width:440px){
+    
+}
+    
