@@ -41,11 +41,11 @@ function Navbar() {
                 <div className="sub-2-fundraiser">
                     <p>Start a Fundraiser</p>
                 </div>
-                <div className="sub-2-sign">
+                {/* <div className="sub-2-sign"> */}
                 
-                <Link className='bg-green-600 rounded-md text-white p-3 mt-2 font-bold' to= "signin" element ={<SignIn />} >Lets Start Signing in</Link>
+                <Link className='sub-2-sign ' to= "signin" element ={<SignIn />} >Lets Start Signing in</Link>
 
-                </div>
+                {/* </div> */}
               </div>
           </div>
         </div>
