@@ -12,6 +12,7 @@ import RegistrationForm from './components/registration'
 // import { faSearch } from '@fortawesome/free-solid-svg-icons';
 // import {FaBeer} from 'react-icon/fa'
 import Navbar from "./components/navbars.jsx";
+import SignIn from './components/signin.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -29,6 +30,7 @@ function App() {
                      }>
                <Route index element={<Home />} />
                <Route path='signup' element={<RegistrationForm />} />
+               <Route path='signin' element={<SignIn />} />
                
 
        
