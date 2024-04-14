@@ -119,6 +119,7 @@ function Home() {
                  <div className="card"></div>
              </div>
         </div>
+        
     </div>
     </>
   )
