@@ -10,7 +10,7 @@ body{
     padding: 0.7rem;
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .container-sub-1{
     width: 50%;
@@ -103,4 +103,66 @@ body{
 }
 .life-raiserfee{
     line-height: 2.5rem;
+}
+
+.float-donate-monthly-image{
+    width: 60%;
+    margin: auto;
+    padding: 0.6rem;
+    position: absolute;
+    top: 29.4rem;
+    left: 25%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 20px;
+     /* border: 2px solid red; */
+
+}
+.image img{
+    width: 7rem;
+    height: 9rem;
+}
+.donate{
+    width: 24%;
+    border: 1px solid black;
+    padding: 0.9rem;
+    margin-left: 1.4rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.727);
+    text-align: center;
+}
+.monthly-donation-text{
+    margin-left: 2rem;
+}
+.monthly-donation{
+    width: 76%;
+    font-size: x-large;
+    font-weight: 600;
+    /* border: 1px solid black; */
+}
+.text{
+    width: 76%;
+    /* border: 1px solid black; */
+}
+.image{
+    margin-left: -7rem;
+    /* border: 1px solid black; */
+}
+.trending-fundraiser{
+    position: relative;
+    top: 12rem;
+    left: 35%;
+}
+.trending-fundraiser h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.trending-fundraiser p{
+    font-size: 1.3rem;
 }

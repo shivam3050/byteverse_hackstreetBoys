@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import logo from './assets/logo photo-bg.jpg'
 import whatsappicon from './assets/whatsapp-icon.png'
 import babyphoto from './assets/baby photo.avif'
+import babyphotos from './assets/baby photo-3.avif'
 import viteLogo from '/vite.svg'
 import './App.css'
 import RegistrationForm from './components/registration'
@@ -69,9 +70,54 @@ function Home() {
       </div>
 
 
-      {/* Container-3 Card */}
+      {/* Container-3 Card float*/}
         <div className="container-3">
+             <div className="float-donate-monthly-image">
+                 <div className="donate">
+                  Donate Now 
+                 </div>
+                 <div className="monthly-donation-text">
+                      <div className="monthly-donation">
+                         <h3>Start Monthly Donation to Save Lives</h3>
+                      </div>
+                      <div className="text">
+                        <p>With your support, countless children will recieve health care and a happy life.
+                           Start your monthly donation today</p>
+                      </div>
+                 </div>
+                 <div className="image">
+                  <img src={babyphotos} alt="baby-image-3" />
+                 </div>
+             </div>
+
              
+             <div className="trending-fundraiser">
+                 <h1>Trending Fundraisers</h1>
+                 <p>View the fundraisers that are most active right now</p>
+             </div>
+             
+             {/* Cards */}
+             <div className="all-card">
+                 <div className="card">
+                     <div className="sub-card-1">
+                      <img src={babyphotos} alt="card-1" />
+                     </div>
+                     <div className="sub-card-1">
+                      <p>School for speciaL needs</p>
+                     </div>
+                     <div className="sub-card-1">
+                      <p>by Minhaj Interfaith and welfare found...</p>
+                     </div>
+                     <div className="sub-card-1">
+                      <p>₹27,29,627 raised out of ₹30,00,000</p>
+                     </div>
+                     <div className="sub-card-1">
+                      
+                     </div>
+                 </div>
+                 <div className="card"></div>
+                 <div className="card"></div>
+             </div>
         </div>
     </div>
     </>
