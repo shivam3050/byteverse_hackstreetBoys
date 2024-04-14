@@ -12,6 +12,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import RegistrationForm from './components/registration'
 import { Link } from 'react-router-dom'
+import TrendingFundraisers from './components/TrendingFundraisers'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faSearch } from '@fortawesome/free-solid-svg-icons';
 // import {FaBeer} from 'react-icon/fa'
@@ -216,6 +217,7 @@ function Home() {
         
       </div>
 
+       <TrendingFundraisers />
     </div>
     </>
   )
